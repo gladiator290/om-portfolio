@@ -16,7 +16,7 @@ const otherProjects = [
     description:
       "Modern SaaS inspired personal portfolio website. ",
     tech: ["React", "Tailwind"],
-    liveUrl: "#",
+    liveUrl: "https://om-portfolio-pearl.vercel.app/",
     githubUrl: "https://github.com/gladiator290/om-portfolio",
   },
   
