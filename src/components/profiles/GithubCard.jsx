@@ -59,7 +59,7 @@ const GithubCard = () => {
         </div>
 
         <a
-          href=""https://github.com/gladiator290""
+          href="https://github.com/gladiator290"
           target="_blank"
           rel="noreferrer"
           className="
