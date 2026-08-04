@@ -93,13 +93,18 @@ const LivePreview = () => {
             {project.image ? (
               <img
                 src={project.image}
-                alt={project.title}
+                alt={`${project.title} project preview`}
+                width="400"
+                height="260"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover"
               />
             ) : (
               <iframe
                 src={project.liveUrl}
-                title={project.title}
+                title={`${project.title} live preview`}
+                loading="lazy"
                 className="w-full h-full"
               />
             )}

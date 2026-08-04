@@ -235,6 +235,10 @@ const Hero = () => {
             <img
               src={profile}
               alt="Om Bhalla"
+              width="400"
+              height="470"
+              loading="eager"
+              fetchPriority="high"
               className="
               w-full
               h-full

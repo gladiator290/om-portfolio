@@ -1,0 +1,14 @@
+{
+  "name": "Om Bhalla | Full Stack Developer",
+  "short_name": "Om Bhalla",
+  "description": "Portfolio of Om Bhalla, Full Stack Developer building scalable web applications, AI-powered products and modern digital experiences.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FAFBFF",
+  "theme_color": "#4f46e5",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

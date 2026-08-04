@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://om-portfolio-pearl.vercel.app/sitemap.xml
