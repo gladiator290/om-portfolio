@@ -27,7 +27,8 @@ const Footer = () => {
           border
           border-slate-200
           rounded-[36px]
-          p-10
+          p-6
+          sm:p-10
           shadow-[0_20px_60px_rgba(15,23,42,0.06)]
         "
         >
@@ -198,7 +199,7 @@ const Footer = () => {
             "
             >
 
-              <div className="flex gap-6 text-slate-600">
+              <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-slate-600">
 
                 <a href="#home" className="hover:text-indigo-600">
                   Home

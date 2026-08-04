@@ -17,7 +17,8 @@ const GithubCard = () => {
       border
       border-slate-200
       rounded-[32px]
-      p-8
+      p-6
+      sm:p-8
       shadow-sm
       hover:shadow-[0_20px_60px_rgba(15,23,42,0.08)]
       transition-all

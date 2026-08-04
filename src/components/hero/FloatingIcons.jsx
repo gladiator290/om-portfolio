@@ -14,6 +14,8 @@ const FloatingIcons = () => {
           repeat: Infinity,
         }}
         className="
+        hidden
+        sm:flex
         absolute
         top-10
         left-0
@@ -22,7 +24,6 @@ const FloatingIcons = () => {
         px-4
         py-3
         shadow-[0_15px_40px_rgba(15,23,42,0.08)]
-        flex
         items-center
         gap-2
         z-10
@@ -47,6 +48,8 @@ const FloatingIcons = () => {
           repeat: Infinity,
         }}
         className="
+        hidden
+        sm:flex
         absolute
         top-28
         right-0
@@ -55,7 +58,6 @@ const FloatingIcons = () => {
         px-4
         py-3
         shadow-[0_15px_40px_rgba(15,23,42,0.08)]
-        flex
         items-center
         gap-2
         z-10
@@ -80,6 +82,8 @@ const FloatingIcons = () => {
           repeat: Infinity,
         }}
         className="
+        hidden
+        sm:flex
         absolute
         bottom-24
         left-2
@@ -88,7 +92,6 @@ const FloatingIcons = () => {
         px-4
         py-3
         shadow-[0_15px_40px_rgba(15,23,42,0.08)]
-        flex
         items-center
         gap-2
         z-10
@@ -113,6 +116,8 @@ const FloatingIcons = () => {
           repeat: Infinity,
         }}
         className="
+        hidden
+        sm:flex
         absolute
         bottom-10
         right-2
@@ -121,7 +126,6 @@ const FloatingIcons = () => {
         px-4
         py-3
         shadow-[0_15px_40px_rgba(15,23,42,0.08)]
-        flex
         items-center
         gap-2
         z-10

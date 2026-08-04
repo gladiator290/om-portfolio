@@ -18,7 +18,8 @@ const ProjectCard = ({
       border
       border-slate-200
       rounded-[30px]
-      p-7
+      p-5
+      sm:p-7
       shadow-sm
       hover:shadow-[0_20px_60px_rgba(15,23,42,0.08)]
       transition-all
@@ -54,7 +55,7 @@ const ProjectCard = ({
 
       </div>
 
-      <div className="flex gap-3 mt-7">
+      <div className="flex flex-wrap gap-3 mt-7">
 
         <a
           href={liveUrl}

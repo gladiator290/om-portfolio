@@ -13,7 +13,8 @@ const SkillCard = ({ icon, title, level }) => {
       border
       border-slate-200
       rounded-[22px]
-      p-5
+      p-3
+      sm:p-5
       shadow-sm
       hover:shadow-[0_15px_40px_rgba(15,23,42,0.08)]
       transition-all
@@ -40,8 +41,10 @@ const SkillCard = ({ icon, title, level }) => {
 
         <div
           className="
-          w-14
-          h-14
+          w-12
+          h-12
+          sm:w-14
+          sm:h-14
           mx-auto
           rounded-2xl
           bg-indigo-50

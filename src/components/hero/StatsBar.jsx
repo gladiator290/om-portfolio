@@ -39,7 +39,8 @@ const StatsBar = () => {
         border
         border-slate-200
         rounded-[36px]
-        p-8
+        p-5
+        sm:p-8
         shadow-[0_20px_60px_rgba(15,23,42,0.06)]
       "
       >

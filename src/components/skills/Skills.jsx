@@ -1,6 +1,5 @@
 import { useState } from "react";
 import SkillCard from "./SkillCard";
-import { motion } from "framer-motion";
 import {
   FaReact,
   FaNodeJs,
@@ -144,11 +143,11 @@ const Skills = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <section id="skills" className="py-32">
+    <section id="skills" className="py-32 scroll-mt-[120px]">
       <div className="text-center mb-16">
         <span className="text-indigo-600 font-semibold">SKILLS</span>
 
-        <h2 className="text-5xl font-bold text-slate-900 mt-4">
+        <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mt-4">
           Skills & Technologies
         </h2>
 
@@ -208,14 +207,17 @@ const Skills = () => {
   flex
   items-center
   justify-center
-  p-6
+  p-3
+  sm:p-6
 "
         >
           <div
             className="
   bg-white
-  rounded-[36px]
-  p-8
+  rounded-[28px]
+  sm:rounded-[36px]
+  p-4
+  sm:p-8
   w-full
   max-w-6xl
   max-h-[85vh]
@@ -223,10 +225,11 @@ const Skills = () => {
   shadow-[0_30px_80px_rgba(15,23,42,0.12)]
 "
           >
-            <div className="flex justify-between items-center mb-8">
+            <div className="flex justify-between items-center mb-8 gap-4">
               <h3
                 className="
-    text-4xl
+    text-2xl
+    sm:text-4xl
     font-bold
     bg-gradient-to-r
     from-indigo-600
@@ -240,9 +243,11 @@ const Skills = () => {
 
               <button
                 onClick={() => setShowModal(false)}
+                aria-label="Close skills modal"
                 className="
     w-10
     h-10
+    shrink-0
     rounded-xl
     bg-slate-100
     hover:bg-slate-200

@@ -51,11 +51,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-32">
+    <section id="contact" className="py-32 scroll-mt-[120px]">
       <div className="text-center mb-16">
         <span className="text-indigo-600 font-semibold">CONTACT</span>
 
-        <h2 className="text-5xl font-bold text-slate-900 mt-4">
+        <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mt-4">
           Let's Work Together
         </h2>
 
@@ -76,7 +76,8 @@ const Contact = () => {
   border
   border-slate-200
   rounded-[36px]
-  p-10
+  p-6
+  sm:p-10
   shadow-sm
   hover:shadow-[0_20px_60px_rgba(15,23,42,0.08)]
   transition-all
@@ -139,7 +140,8 @@ const Contact = () => {
   border
   border-slate-200
   rounded-[36px]
-  p-10
+  p-6
+  sm:p-10
   shadow-sm
   hover:shadow-[0_20px_60px_rgba(15,23,42,0.08)]
   transition-all

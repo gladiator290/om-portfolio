@@ -12,6 +12,7 @@ const Profiles = () => {
       py-32
       relative
       overflow-hidden
+      scroll-mt-[120px]
     "
     >
 
@@ -67,7 +68,8 @@ const Profiles = () => {
 
           <h2
             className="
-            text-5xl
+            text-4xl
+            sm:text-5xl
             lg:text-6xl
             font-bold
             text-slate-900

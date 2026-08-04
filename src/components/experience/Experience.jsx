@@ -46,7 +46,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-28 relative"
+      className="py-28 relative scroll-mt-[120px]"
     >
 
       <div className="text-center mb-20">
@@ -57,7 +57,8 @@ const Experience = () => {
 
         <h2
           className="
-          text-5xl
+          text-4xl
+          sm:text-5xl
           lg:text-6xl
           font-bold
           mt-4
@@ -117,7 +118,8 @@ const Experience = () => {
             }}
             className="
             relative
-            pl-20
+            pl-14
+            sm:pl-20
             mb-10
           "
           >
@@ -129,8 +131,10 @@ const Experience = () => {
               absolute
               left-0
               top-6
-              w-12
-              h-12
+              w-10
+              h-10
+              sm:w-12
+              sm:h-12
               rounded-full
               bg-gradient-to-r
               from-indigo-600
@@ -156,7 +160,8 @@ const Experience = () => {
               border
               border-slate-200
               rounded-[28px]
-              p-8
+              p-5
+              sm:p-8
               shadow-sm
               hover:shadow-[0_20px_60px_rgba(15,23,42,0.08)]
               transition-all

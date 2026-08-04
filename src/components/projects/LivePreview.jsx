@@ -104,7 +104,7 @@ const LivePreview = () => {
 
           {/* Content */}
 
-          <div className="p-6">
+          <div className="p-5 sm:p-6">
             <h3 className="text-2xl font-bold">{project.title}</h3>
 
             <p
@@ -118,7 +118,7 @@ const LivePreview = () => {
               {project.description}
             </p>
 
-            <div className="flex gap-3 mt-6">
+            <div className="flex flex-wrap gap-3 mt-6">
               <a
                 href={project.liveUrl}
                 target="_blank"

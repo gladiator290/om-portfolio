@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-28 relative overflow-hidden"
+      className="py-28 relative overflow-hidden scroll-mt-[120px]"
     >
 
       {/* Watermark */}
@@ -25,7 +25,8 @@ const About = () => {
 
         <h2
           className="
-          text-5xl
+          text-4xl
+          sm:text-5xl
           lg:text-6xl
           font-bold
           mt-4
@@ -54,7 +55,8 @@ const About = () => {
             relative
             overflow-hidden
             rounded-[36px]
-            p-10
+            p-6
+            sm:p-10
             bg-gradient-to-br
             from-indigo-600
             to-violet-600
@@ -109,10 +111,10 @@ const About = () => {
               solving real-world problems through technology.
             </p>
 
-            <div className="grid grid-cols-2 gap-8 mt-12 relative">
+            <div className="grid grid-cols-2 gap-5 sm:gap-8 mt-12 relative">
 
               <div>
-                <h4 className="text-5xl font-bold">
+                <h4 className="text-4xl sm:text-5xl font-bold">
                   250+
                 </h4>
 
@@ -122,7 +124,7 @@ const About = () => {
               </div>
 
               <div>
-                <h4 className="text-5xl font-bold">
+                <h4 className="text-4xl sm:text-5xl font-bold">
                   10+
                 </h4>
 
@@ -132,7 +134,7 @@ const About = () => {
               </div>
 
               <div>
-                <h4 className="text-5xl font-bold">
+                <h4 className="text-4xl sm:text-5xl font-bold">
                   15+
                 </h4>
 
@@ -142,7 +144,7 @@ const About = () => {
               </div>
 
               <div>
-                <h4 className="text-5xl font-bold">
+                <h4 className="text-4xl sm:text-5xl font-bold">
                   2026
                 </h4>
 

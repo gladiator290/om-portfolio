@@ -10,6 +10,7 @@ const Hero = () => {
   pt-28
   pb-16
   relative
+  scroll-mt-[120px]
 "
     >
       {/* Background Glow */}
@@ -88,7 +89,8 @@ const Hero = () => {
 
           <h1
             className="
-            text-5xl
+            text-4xl
+            sm:text-5xl
             lg:text-7xl
             font-extrabold
             leading-[0.95]
@@ -126,7 +128,7 @@ const Hero = () => {
 
           {/* Buttons */}
 
-          <div className="flex flex-wrap gap-4 mt-10">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-10">
             <a
               href="#projects"
               className="
@@ -140,6 +142,9 @@ const Hero = () => {
               font-medium
               flex
               items-center
+              justify-center
+              w-full
+              sm:w-auto
               shadow-lg
               hover:scale-105
               transition-all
@@ -161,6 +166,9 @@ const Hero = () => {
               font-medium
               flex
               items-center
+              justify-center
+              w-full
+              sm:w-auto
               hover:shadow-lg
               transition-all
             "
@@ -204,7 +212,8 @@ const Hero = () => {
   relative
   flex
   justify-center
-  px-10
+  px-6
+  sm:px-10
 "
         >
           <div
@@ -222,8 +231,9 @@ const Hero = () => {
           <div
             className="
             relative
-            w-[400px]
-            h-[470px]
+            w-full
+            max-w-[400px]
+            aspect-[400/470]
             rounded-[40px]
             overflow-hidden
             bg-white

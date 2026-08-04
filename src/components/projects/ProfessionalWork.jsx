@@ -158,6 +158,8 @@ const ProfessionalWork = () => {
                 py-1
                 rounded-full
                 text-right
+                min-w-0
+                truncate
               "
               >
                 {project.badge}
@@ -176,7 +178,7 @@ const ProfessionalWork = () => {
 
             {/* Content */}
 
-            <div className="p-6 flex flex-col grow">
+            <div className="p-5 sm:p-6 flex flex-col grow">
               <h4 className="text-2xl font-bold">{project.title}</h4>
 
               <p

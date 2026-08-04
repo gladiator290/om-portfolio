@@ -26,7 +26,7 @@ const otherProjects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-32">
+    <section id="projects" className="py-32 scroll-mt-[120px]">
 
       <div className="text-center mb-20">
 
@@ -34,7 +34,7 @@ const Projects = () => {
     PROJECTS
   </span>
 
-  <h2 className="text-5xl font-bold text-slate-900 mt-4">
+  <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mt-4">
     Featured Projects
   </h2>
 
