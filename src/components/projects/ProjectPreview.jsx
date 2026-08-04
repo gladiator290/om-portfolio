@@ -136,7 +136,7 @@ const LiveIframePreview = ({ src, title, previewType }) => {
         title={title}
         loading="lazy"
         onLoad={() => setStatus("loaded")}
-        className="w-full h-full pointer-events-none"
+        className="w-full h-full"
       />
     </ScaledViewport>
   );
