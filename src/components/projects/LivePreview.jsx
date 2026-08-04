@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import votingPreview from "../../assets/projects/voting-preview.png";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import ProjectPreview from "./ProjectPreview";
 
 const featuredProjects = [
   {
@@ -9,6 +10,7 @@ const featuredProjects = [
       "AI-powered fake news detection platform that helps users verify news articles and analyze credibility using modern web technologies.",
     liveUrl: "https://verify-2db20.web.app/",
     githubUrl: "https://github.com/gladiator290/verifynews",
+    previewType: "desktop",
   },
 
   {
@@ -17,6 +19,7 @@ const featuredProjects = [
       "Full-stack furniture management system featuring inventory tracking, AI room visualization, customer management and admin dashboard.",
     liveUrl: "https://furniselect-ai.vercel.app/",
     githubUrl: "https://github.com/gladiator290/Furniselect-AI",
+    previewType: "desktop",
   },
 
   {
@@ -26,6 +29,7 @@ const featuredProjects = [
     liveUrl: "https://onlinevotingsystemphp.page.gd/?i=1",
     githubUrl: "https://github.com/gladiator290/online-voting-system",
     image: votingPreview,
+    previewType: "desktop",
   },
 ];
 
@@ -90,24 +94,12 @@ const LivePreview = () => {
           {/* Preview */}
 
           <div className="h-[260px] bg-slate-100">
-            {project.image ? (
-              <img
-                src={project.image}
-                alt={`${project.title} project preview`}
-                width="400"
-                height="260"
-                loading="lazy"
-                decoding="async"
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <iframe
-                src={project.liveUrl}
-                title={`${project.title} live preview`}
-                loading="lazy"
-                className="w-full h-full"
-              />
-            )}
+            <ProjectPreview
+              image={project.image}
+              liveUrl={project.liveUrl}
+              title={project.title}
+              previewType={project.previewType}
+            />
           </div>
 
           {/* Content */}

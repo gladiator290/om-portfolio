@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
+import ProjectPreview from "./ProjectPreview";
 
 const professionalWork = [
   {
@@ -9,6 +9,7 @@ const professionalWork = [
     description:
       "Developed and worked on DigitalAdIn's production website, delivering a responsive and modern web experience for the company's digital presence.",
     iframeUrl: "https://digitaladin.com/",
+    previewType: "desktop",
     links: [
       {
         label: "Visit Website",
@@ -24,6 +25,7 @@ const professionalWork = [
     description:
       "A production business operations platform built for DigitalAdIn, combining lead management, communication, automation and internal workflow capabilities.",
     iframeUrl: "https://crm.digitaladin.in/",
+    previewType: "desktop",
     features: [
       "Lead Management",
       "Payments",
@@ -51,6 +53,7 @@ const professionalWork = [
     description:
       "Client project developed at DigitalAdIn for JP Legals, focused on lead management, lead analytics and WhatsApp-integrated communication workflows.",
     iframeUrl: "https://jpcrm.digitaladin.in/",
+    previewType: "desktop",
     features: ["Lead Management", "Lead Analytics", "WhatsApp Integration"],
     links: [
       {
@@ -66,82 +69,6 @@ const professionalWork = [
     ],
   },
 ];
-
-/**
- * Some production sites block iframe embedding via X-Frame-Options /
- * CSP frame-ancestors. There is no reliable cross-browser way to detect
- * that from JS (the browser silently blocks rendering), so this uses a
- * best-effort timeout: if the iframe hasn't fired `load` shortly after
- * mounting, we assume it's unavailable and show a fallback instead of a
- * blank frame.
- */
-const IframePreview = ({ src, title }) => {
-  const [status, setStatus] = useState("loading");
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setStatus((current) => (current === "loading" ? "unavailable" : current));
-    }, 4000);
-
-    return () => clearTimeout(timer);
-  }, [src]);
-
-  if (status === "unavailable") {
-    return (
-      <div
-        className="
-        w-full
-        h-full
-        flex
-        flex-col
-        items-center
-        justify-center
-        gap-3
-        bg-slate-50
-        px-6
-        text-center
-      "
-      >
-        <p className="text-sm text-slate-500">
-          Live preview unavailable — open the project to view it.
-        </p>
-
-        <a
-          href={src}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="
-          inline-flex
-          items-center
-          gap-2
-          px-4
-          py-2
-          rounded-xl
-          bg-gradient-to-r
-          from-indigo-600
-          to-violet-600
-          text-white
-          text-sm
-          font-medium
-        "
-        >
-          Open Project
-          <FiExternalLink />
-        </a>
-      </div>
-    );
-  }
-
-  return (
-    <iframe
-      src={src}
-      title={title}
-      loading="lazy"
-      onLoad={() => setStatus("loaded")}
-      className="w-full h-full"
-    />
-  );
-};
 
 const ProfessionalWork = () => {
   return (
@@ -240,9 +167,10 @@ const ProfessionalWork = () => {
             {/* Preview */}
 
             <div className="h-[260px] bg-slate-100">
-              <IframePreview
-                src={project.iframeUrl}
-                title={`${project.title} live preview`}
+              <ProjectPreview
+                liveUrl={project.iframeUrl}
+                title={project.title}
+                previewType={project.previewType}
               />
             </div>
 
