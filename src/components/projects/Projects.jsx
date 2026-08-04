@@ -1,5 +1,6 @@
 import LivePreview from "./LivePreview";
 import ProjectCard from "./ProjectCard";
+import ProfessionalWork from "./ProfessionalWork";
 
 const otherProjects = [
   {
@@ -74,6 +75,8 @@ const Projects = () => {
         </div>
 
       </div>
+
+      <ProfessionalWork />
 
     </section>
   );
