@@ -68,6 +68,22 @@ const professionalWork = [
       },
     ],
   },
+
+  {
+    title: "MOF Law Website",
+    badge: "Client Website · Legal Services",
+    description:
+      "Client landing page developed at DigitalAdIn for MOF Law, delivering a responsive and professional web presence for the legal services firm.",
+    iframeUrl: "https://moflaw.in/",
+    previewType: "desktop",
+    links: [
+      {
+        label: "Visit Website",
+        href: "https://moflaw.in/",
+        variant: "primary",
+      },
+    ],
+  },
 ];
 
 const ProfessionalWork = () => {
@@ -104,7 +120,7 @@ const ProfessionalWork = () => {
         </p>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 gap-8">
         {professionalWork.map((project, index) => (
           <motion.div
             key={index}
